@@ -1,0 +1,183 @@
+:root {
+    --bg-color-gray-lt: #EEEEEE;
+    --bg-color-gray-md: #DDDDDD;
+}
+
+body {
+    background-color: var(--bg-color-gray-lt);
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-color-gray-lt);
+} 
+
+.nav-col {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.col-left {
+    margin-right: auto;
+}
+
+#nav-bar h1 {
+    font-size: 28px;
+}
+
+#header-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+}
+
+.nav-link {
+    padding: 15px;
+    color: black;
+}
+
+#order {
+    padding-top: 120px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+input {
+    width : 80%;
+    max-width: 500px;
+}
+
+[type='submit'] {
+    background-color: #F1C40F;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #FF8C00;
+    transition: 500ms;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+#features {
+    padding-top: 120px;
+}
+
+#features i {
+    font-size: 35px;
+    padding : 0 2rem 2rem 2rem;
+    color: #FF8C00;
+}
+
+#promo {
+    padding-top: 120px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+#products {
+    padding-top: 120px;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background: var(--bg-color-gray-md);
+    
+}
+
+footer {
+    background-color: var(--bg-color-gray-md);
+    margin-top: 50px;
+}
+
+footer a {
+    color: black;
+    padding: 15px;
+    display: inline-block;
+}
+
+footer p {
+    padding: 0 15px 15px;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+
+    .navcontainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem;        
+    } 
+
+    .col-left {
+        margin-right: 0;
+    }
+
+    #order {
+        padding-top: 170px;
+    }
+
+    #features {
+        padding-top: 170px;
+    }
+
+    #promo {
+        padding-top: 170px;
+    }
+
+    #products {
+        padding-top: 170px;
+    }
+    
+
+}
+
+@media screen and (max-width: 450px) {
+
+    iframe {
+        width: 300px;
+        height: 230px;
+    }
+}
+  
